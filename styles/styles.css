@@ -364,13 +364,24 @@ footer {
 
 @media screen and (max-width: 576px) {
   body {
-    background-color: red;
+    /* background-color: red; */
+  }
+  .home {
+    flex-direction: column;
+    height: unset;
+    text-align: center;
+  }
+  .home h1 {
+    font-size: 40px;
+  }
+  #btn-wht {
+    margin-top: 10px;
   }
   header {
     display: flex;
     height: unset;
     flex-direction: column;
-    margin-bottom: unset; 
+    margin-bottom: unset;
     padding: unset;
     /* height: 70px;
     align-items: center;
@@ -390,5 +401,21 @@ footer {
     width: 100%;
     margin-top: unset;
     padding: 20px 0;
+  }
+  .service-container {
+    text-align: center;
+  }
+
+  .about,
+  .contact-container,
+  .footer {
+    flex-direction: column;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer ul {
+    margin: 0;
+    padding: 0;
   }
 }
