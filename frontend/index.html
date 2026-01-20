@@ -234,12 +234,15 @@
             </div>
           </div>
           <div class="form">
-            <form method="POST" id="form">
-              <!-- form habituel -->
-              <h2>Nom</h2>
-              <input type="text" name="name" placeholder="Votre Nom" required />
-              <h2>E-mail</h2>
-              <input type="email" name="email" placeholder="Votre E-mail" required
+            <form id="contactForm">
+              <h2>Name</h2>
+              <input type="text" name="name" placeholder="Your Name" required />
+              <h2>Email</h2>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
               />
               <h2>Message</h2>
               <textarea
@@ -250,6 +253,7 @@
               ></textarea>
               <button type="submit">Submit</button>
             </form>
+            <p id="status"></p>
           </div>
         </div>
       </div>
@@ -294,6 +298,6 @@
       <span></span>
       <span></span>
     </div>
-    <script src="./script/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
